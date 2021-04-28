@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GlebaM/Natours-tours-website.git"
+  },
+  "author": "Michał",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GlebaM/Natours-tours-website/issues"
+  },
+  "homepage": "https://github.com/GlebaM/Natours-tours-website#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
