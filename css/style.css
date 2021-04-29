@@ -178,8 +178,7 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
@@ -198,6 +197,12 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.btn:hover::after {
+  -webkit-transform: scaleX(1.35) scaleY(1.9);
+          transform: scaleX(1.35) scaleY(1.9);
+  opacity: 0;
+}
+
 .btn:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
@@ -208,6 +213,10 @@ body {
 .btn--white {
   background-color: white;
   color: #777;
+}
+
+.btn--white::after {
+  background-color: white;
 }
 
 .btn::after {
@@ -224,17 +233,6 @@ body {
           transform: scaleX(1) scaleY(1);
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
-}
-
-.btn--white::after {
-  background-color: white;
-}
-
-.btn:hover::after {
-  -webkit-transform: scaleX(1.35) scaleY(1.9);
-          transform: scaleX(1.35) scaleY(1.9);
-  opacity: 0;
-  z-index: -120;
 }
 
 .btn--main-anim {
