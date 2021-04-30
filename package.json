@@ -4,13 +4,13 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GlebaM/Natours-tours-website.git"
   },
-  "author": "Michał",
+  "author": "Michal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GlebaM/Natours-tours-website/issues"
