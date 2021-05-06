@@ -10,8 +10,11 @@ $color-sec-blue-deep: #5643fa;
 
 // Section 2 - main
 $color-grey-light-1:#f7f7f7;
+$color-grey-light-2:#eee;
 //  html elements like buttons and others like shadows, fonts etc.
 $color-greyDark: #777;
+$color-greyDark-2: #999;
+$color-greyDark-3: #333;
 $color-white: rgb(255, 255, 255);
 $color-black: rgb(0, 0, 0);
 
@@ -27,3 +30,9 @@ $gutter-horizontal: 6rem;
 // SHADOW
 $shadow-black-15: rgba($color-black, .15);
 $shadow-black-20: rgba($color-black, .2);
+
+// ROUNDED CORNERS
+$rounded-xs: 3px;
+$rounded-sm: 4px;
+$rounded-md: 6px;
+$rounded-lg: 8px;

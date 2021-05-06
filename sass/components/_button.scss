@@ -1,5 +1,10 @@
+button {
+    position: relative;
+}
+
 .btn {
 
+    &,
     &:link,
     &:visited {
         position: relative;
@@ -10,6 +15,10 @@
         border-radius: 5rem;
         transition: all .1s ease;
         font-size: $default-font-size;
+
+        // Change for the <button> element
+        cursor: pointer;
+        border: none;
     }
 
     &:hover {
@@ -24,6 +33,7 @@
     }
 
     &:active {
+        // outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem $shadow-black-20;
     }
@@ -34,6 +44,15 @@
 
         &::after {
             background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
         }
     }
 
