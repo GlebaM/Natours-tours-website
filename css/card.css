@@ -1,9 +1,0 @@
-.card {
-  background-color: orange;
-  height: 50rem;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-}
-/*# sourceMappingURL=card.css.map */
