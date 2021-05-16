@@ -13,7 +13,7 @@
 
     @media (min-resolution: 192dpi) and (min-width: 37.5em),
     (min-width: 125em) {
-        background-image: linear-gradient(160deg, rgba($color-sec-oran, 0.7), rgba($color-sec-oran-deep, 0.5)),
+        background-image: linear-gradient(160deg, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.5)),
             url(../img/hero.jpg);
     }
 
