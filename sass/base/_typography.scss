@@ -3,7 +3,6 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: $color-greyDark;
-    padding: 3rem;
     // overflow-x: hidden;
 }
 
@@ -12,27 +11,39 @@ body {
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 7vh;
-    padding-right: 0;
-    text-shadow: inherit;
     text-shadow: 2px 2px 2px rgb(185, 183, 183);
 
     &--main {
         position: relative;
-        display: block;
+        display: inline-block;
         font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 5rem;
-        animation: moveRight 1s ease-out forwards;
-        word-break: break-all;
+        letter-spacing: 4rem;
+        padding-left: 4rem;
+        animation: moveRight .7s ease-out .3s forwards;
+        // background-color: rgba(190, 86, 86, 0.712);
+
+        @include respond(phone) {
+            font-size: 4rem;
+            letter-spacing: 1rem;
+            padding-left: 1rem;
+        }
     }
 
     &--sub {
-        display: block;
-        padding-right: 0;
+        display: inline-block;
+        // padding-right: 0;
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 1.74rem;
-        animation: moveLeft 1s ease-out forwards;
+        padding-left: 1.74rem;
+        animation: moveLeft .7s ease-out .3s forwards;
+
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+            padding-left: .5rem;
+        }
     }
 }
 
@@ -48,6 +59,22 @@ body {
     letter-spacing: .2rem;
     transition: all .2s;
 
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &--center {
+        padding: 0 3rem;
+    }
+
+    &--fit {
+        width: fit-content;
+    }
+
     &:hover {
         transform: skewY(3deg) skewX(12deg) scale(1.1);
         text-shadow: .5rem 1.2rem 2.2rem rgba($color-black, .2);
@@ -58,6 +85,13 @@ body {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+
+    &--center {
+        @include respond(tab-port) {
+            text-align: center;
+        }
+    }
+
 }
 
 .paragraph {
@@ -65,5 +99,9 @@ body {
 
     &:not(:last-child) {
         margin-bottom: 3rem;
+    }
+
+    @include respond(tab-port) {
+        text-align: justify;
     }
 }
