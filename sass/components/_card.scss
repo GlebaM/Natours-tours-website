@@ -4,7 +4,8 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     height: 52rem;
-
+    border-radius: 4px;
+    // overflow: hidden;
 
     &__side {
 
@@ -100,8 +101,6 @@
         width: 70%;
         top: 12rem;
         right: 2rem;
-
-
     }
 
     &__heading-span {
@@ -166,11 +165,8 @@
         font-weight: 100;
     }
 
-
-
-
-
-    @include respond(tab-port) {
+    @media only screen and (max-width:56.25em),
+    only screen and (hover: none) {
         height: auto;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
