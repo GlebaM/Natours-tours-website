@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    height: 85vh;
+    height: 45vh;
     background-image: linear-gradient(160deg, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.5)), url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
@@ -11,8 +11,8 @@
         clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     }
 
-    @media (min-resolution: 192dpi) and (min-width: 37.5em),
-    (min-width: 125em) {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
         background-image: linear-gradient(160deg, rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.5)),
             url(../img/hero.jpg);
     }
